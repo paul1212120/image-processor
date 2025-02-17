@@ -1,0 +1,21 @@
+In fisierul imageprocessing.c au fost rezolvate cele 6 task-uri, respectand cerintele date, precum si regulile de CodingStyle.
+
+Funcția flip_horizontal creează o imagine nouă în care coloanele sunt inversate față de imaginea de intrare, realizând astfel o oglindire orizontală.
+
+Funcția rotate_left realizează o rotație la stânga a imaginii, generând o imagine nouă.
+
+Funcția crop extrage o porțiune dintr-o imagine, specificată prin coordonatele x, y și dimensiunile h, w.
+
+Funcția extend mărește dimensiunile imaginii prin adăugarea de rânduri și coloane, completate cu culori specifice.
+
+Funcția paste lipsește o imagine sursă într-o imagine destinație la poziția specificată de coordonatele x și y.
+
+Funcția ver ajustează valorile RGB pentru a se încadra în intervalul [0, 255].
+
+Funcția apply_filter aplică un filtru specificat asupra imaginii de intrare, generând o imagine nouă rezultată din operația de convoluție.
+
+Acest cod C, aflat in fisierul interactive.c, se implementează un program simplu de procesare a imaginilor cu operații precum încărcarea și salvarea imaginilor în format BMP, aplicarea diverselor filtre și operații de manipulare a imaginilor. Se fac testele necesare pentru a aplica schimbarile asupra imaginilor. Comenzi disponibile: "l" pentru încărcarea imaginilor, "s" pentru salvarea, "ah" pentru a aplica operația de flip pe orizontală imaginii de la indexul index, "ar" pentru a aplica operația de rotație la stânga imaginii de la indexul index, "ac" pentru a aplica operația de crop cu parametrii dați imaginii de la indexul index, "ae" pentru a aplica operația de extend cu parametrii dați imaginii de la indexul index, "ap" pentru a aplica aplică operația de paste cu parametrii dați imaginii de la indexul index_dst, "cf" pentru crearea unui filtru, "af" pentru aplicarea unui filtru la o imagine, "df/di" pentru ștergerea unui filtru/imagine.
+
+La fiecare comandă, se citește comanda și se execută operația corespunzătoare, utilizând funcțiile definite anterior.
+
+La final, memoria alocată este eliberată și programul se încheie.
